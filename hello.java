@@ -83,11 +83,14 @@ House h = new House("House X", "KK83st", 47);
 //        System.out.println(Arrays.toString(countVowels("Hello world, Here comes this one")));
 //        int val = countVowels("Hello world, Here comes this Event of learning Java as A future promising developer at the peak!");
 //        System.out.println(val);
-        System.out.println(isEven(43));
-        System.out.println(isPrime(2));
-        System.out.println(factorial(5));
-        int[] numbers = {1, 3,48, 436743, 9326723, 2328623, 463_99};
-        System.out.println(maxValue(numbers));
+//        System.out.println(isEven(43));
+//        System.out.println(isPrime(2));
+//        System.out.println(factorial(5));
+//        int[] numbers = {1, 3,48, 436743, 9326723, 2328623, 463_99};
+//        System.out.println(maxValue(numbers));
+
+        int[] array = {1,243,3732, 38, 49};
+        System.out.println(maxRecursive(array, 5));
     }
  static boolean isEven(int num){
         return num %2 == 0;
@@ -122,6 +125,12 @@ static int maxValue(int[] array){
         }
         return max;
 }
+static int maxRecursive(int[] numbers, int n){
+if(n == 1) return numbers[0];
+return Math.max(numbers[n -1], maxRecursive(numbers, n-1));
+
+}
+
 //public static int countVowels(String str){
 //        char[] vowels = {'a', 'e', 'u', 'i', 'o' };
 //      str = str.toLowerCase();
