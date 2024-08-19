@@ -32,7 +32,7 @@ public class DataStructure {
                 "pale green"
         );
 
-        immutableColors.add("purple"); // throw an error
+//        immutableColors.add("purple"); // throw an error
         List<String> colors = new ArrayList<String>();
         colors.add("blue");
         colors.add("green");
